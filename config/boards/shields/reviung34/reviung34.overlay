@@ -43,13 +43,13 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(7,6) RC(7,5) RC(7,4) 
         diode-direction = "col2row";
 
         col-gpios
-            = <&gpio1 04 GPIO_ACTIVE_HIGH>
+            = <&gpio1 4 GPIO_ACTIVE_HIGH>
             , <&gpio1 06 GPIO_ACTIVE_HIGH>
             , <&gpio1 15 GPIO_ACTIVE_HIGH>
             , <&gpio1 13 GPIO_ACTIVE_HIGH>
             , <&gpio1 11 GPIO_ACTIVE_HIGH>
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
-            , <&gpio0 09 GPIO_ACTIVE_HIGH>
+            , <&gpio0 9 GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
