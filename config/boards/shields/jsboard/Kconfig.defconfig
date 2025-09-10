@@ -1,9 +1,9 @@
 # Copyright (c) 2023 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_REVIUNG34
+if SHIELD_JSBOARD
 
 config ZMK_KEYBOARD_NAME
-    default "REVIUNG34"
+    default "JSBOARD"
 
 endif
