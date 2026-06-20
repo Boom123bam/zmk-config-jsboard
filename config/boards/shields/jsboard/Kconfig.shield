@@ -5,12 +5,12 @@ config SHIELD_JSBOARD
     def_bool $(shields_list_contains,jsboard)
 
 right_encoder: encoder_right {
-        compatible = "alps,ec11";
-        a-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
-        b-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
-        steps = <80>;
-        status = "disabled";
-    };
+    compatible = "alps,ec11";
+    a-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
+    b-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+    steps = <80>;
+    status = "disabled";
+};
 
 
 sensors: sensors {
@@ -19,6 +19,6 @@ sensors: sensors {
     triggers-per-rotation = <20>;
 };
 
-&left_encoder {
+&right_encoder {
     status = "okay";
 };
