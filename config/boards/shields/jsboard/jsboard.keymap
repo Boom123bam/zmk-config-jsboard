@@ -9,8 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-
 / {
     chosen {
         zmk,matrix-transform = &default_transform;
@@ -29,6 +27,8 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B                    &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp ENTER
             &none     &none     &none     &kp LWIN  &none     &mo 2 &kp SPACE &kp SPACE &mo 1   &kp C_MUTE &kp ESC   &mo 3     &none     &none
         >;
+
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
 
     // Symbol layer
