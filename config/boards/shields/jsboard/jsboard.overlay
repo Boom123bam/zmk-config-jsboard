@@ -52,23 +52,12 @@
             ;
     };
 
-    encoders {
-        compatible = "gpio-keys";
-
-        encoder_right: encoder_right {
-            compatible = "alps,ec11";
-            a-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
-            b-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
-            steps = <80>;
-            status = "okay";
-        };
+    encoder_right: encoder_right {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
+        b-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+        steps = <80>;
+        status = "okay";
     };
 
-    sensors {
-        compatible = "zmk,keymap-sensors";
-
-        sensors0 {
-            sensors = <&encoder_right>;
-        };
-    };
 };
